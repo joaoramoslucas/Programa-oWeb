@@ -1,58 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset"=utf-8">
-    <title>Fatec Cursos</title>
-  </head>
-  <body>
-    <h1>Fatec Cursos</h1>
 
-    <p>O nelhor site de cursos de tecnologia da Internet!</p>
-    <!-- COMENTÁRIO - NÃO É MOSTRADO NO NAVEGADOR -->
-    <h2>Nossos Cursos</h2>
-    <p>Veja e escolha entre os nosso cursos oferecidos atualmente:</p>
-    <ul>
-      <li><a href="python.html">Introdução à programação com Python</a></li>
-      <li>Desenvolvimento web usando HTML, CSS e JavaScript</li>
-      <li>Programação para Dispositivos Móveis com Kotlin</li>
-      <li>Banco de Dados MySQL</li>
-    </ul>
-    <!--
-        <ol> lista ordenada _ 1 ,2 3, 4 </ol>
-        -->
-    <h2>Contato</h2>
-    <p>
-      Preencha os campos abaixo e clique em enviar para entrarmos em contato.
-    </p>
-    <form>
-      <div>
-        <label>Nome:</label>
-        <input type="text" />
-      </div>
-      <div>
-        <label>E-mail:</label>
-        <input type="email" />
-      </div>
-      <div>
-        <label>Assunto: </label>
-        <input type="text">
-      </div>
-      <div>
-        <label>Mensagem: </label>
-        <textarea cols="50" rows="5"></textarea>
-      </div>
-      <button>Enviar</button>
-    </form>
+<head>
+  <meta charset"=utf-8">
+  <title>Fatec Cursos</title>
+  <style>
+    form {
+      font-family: Arial, Helvetica, sans-serif;
+      width: 500px;
+      border: 2px solid;
+      border-radius: 6px;
+      padding: 12px;
+    }
 
-    <h2>Quem Somos</h2>
+    label {
+      display: inline-block;
+      width: 120px;
+      text-align: right;
+      margin-right: 5px;
+    }
 
-    <h3>Localização</h3>
+    form div {
+      margin-top: 10px;
+    }
 
-    <address>
-      <a href="https://https://fatecgarca.cps.sp.gov.br/" target="_blank"
-        >Fatec Garça</a
-      >
-      - Av. Presidente Vargas, 2331 - Garça - SP.
-    </address>
-  </body>
+    body {
+      background: linear-gradient(to right, #dbfacd, #00ff2a);
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 20;
+      padding: 20;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0400ff;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    form button {
+      background-color: #05a00a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #00ff0d;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Fatec Cursos</h1>
+
+  <p>O melhor site de cursos de tecnologia da Internet!</p>
+  <!-- COMENTÁRIO - NÃO É MOSTRADO NO NAVEGADOR -->
+  <h2>Nossos Cursos</h2>
+  <p>Veja e escolha entre os nosso cursos oferecidos atualmente:</p>
+  <ul>
+    <li><a href="python.html">Introdução à programação com Python</a></li>
+    <li>Desenvolvimento web usando HTML, CSS e JavaScript</li>
+    <li>Programação para Dispositivos Móveis com Kotlin</li>
+    <li>Banco de Dados MySQL</li>
+  </ul>
+  <p><a href="valores.html">
+      Clique aqui para visualizar os valores de cada curso
+    </a></p>
+  <h2>Contato</h2>
+  <p>
+    Preencha os campos abaixo e clique em enviar para entrarmos em contato.
+  </p>
+  <form>
+    <div>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Digite seu nome aqui" size="30" maxlength="30" required />
+    </div>
+    <div>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" placeholder="Digite seu e-mail aqui" required />
+    </div>
+    <div>
+      <label for="assunto">Assunto: </label>
+      <input type="text" id="assunto" placeholder="Digite o assunto aqui" required />
+    </div>
+    <div>
+      <label for="mensagem">Mensagem: </label>
+      <textarea cols="50" rows="5" id="mensagem" placeholder="Digite o texto aqui..." required></textarea>
+    </div>
+    <button>Enviar</button>
+  </form>
+
+  <h2>Quem Somos</h2>
+
+  <h3>Localização</h3>
+
+  <address>
+    <a href="https://fatecgarca.cps.sp.gov.br/" target="_blank"> Fatec Garça</a>
+    - Av. Presidente Vargas, 2331 - Garça - SP.
+  </address>
+</body>
+
 </html>
