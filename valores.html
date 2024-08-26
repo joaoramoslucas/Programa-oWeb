@@ -10,7 +10,7 @@
             justify-content: center;
         }
         body {
-            background: linear-gradient(to right, #dbfacd, #00ff2a);
+            background: linear-gradient(to right, #ffe6e6, #ff2424);
             font-family: Arial, Helvetica, sans-serif;
             margin: 20;
             padding: 20;
@@ -78,27 +78,30 @@
         </tbody>
     </table>
     <p>Para adquirir um curso, preencha e envie o furmulario abaixo:</p>
-    <form action="compracurso.php" method="get">
+    <form action="compracurso.php" method="post">
         <div>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" size="30" maxlength="30">
+            <input type="text" id="nome" size="30" maxlength="30" name="nome" required>
         </div>
         <div>
-            <label for="email">E-mail:</label>
-            <input type="text" id="email" size="30" maxlength="30">
+            <label for="email">E-Mail:</label>
+            <input type="text" id="email" size="30" maxlength="30" name="e-mail" required>
         </div>
         <div>
-            <label for="senha">Senha:</label>
-            <input type="text" id="senha" size="6" maxlength="12">
+            <label for="senha">Senha de acesso:</label>
+            <input type="password" id="senha" size="6" maxlength="12" name="senha" required>
         </div>
         <div>
             <label for="curso">Curso:</label>
-            <select id="curso">
+            <select id="curso" name="curso">
                 <option>Introdução ao curso de Python</option>
                 <option>Desenvolvimento web usando HTML, CSS e JavaScript</option>
                 <option>Programação para Dispositivos Móveis com Kotlin</option>
                 <option>Banco de Dados MySQL</option>
             </select>
+        </div>
+        <div>
+            <button>Enviar</button>
         </div>
     </form>
 </body>
