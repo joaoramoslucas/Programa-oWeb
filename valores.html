@@ -77,6 +77,30 @@
             </tr>
         </tbody>
     </table>
+    <p>Para adquirir um curso, preencha e envie o furmulario abaixo:</p>
+    <form action="compracurso.php" method="get">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" size="30" maxlength="30">
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" size="30" maxlength="30">
+        </div>
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="text" id="senha" size="6" maxlength="12">
+        </div>
+        <div>
+            <label for="curso">Curso:</label>
+            <select id="curso">
+                <option>Introdução ao curso de Python</option>
+                <option>Desenvolvimento web usando HTML, CSS e JavaScript</option>
+                <option>Programação para Dispositivos Móveis com Kotlin</option>
+                <option>Banco de Dados MySQL</option>
+            </select>
+        </div>
+    </form>
 </body>
 
 </html>
